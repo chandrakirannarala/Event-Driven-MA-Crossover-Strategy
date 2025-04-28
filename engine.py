@@ -1,4 +1,3 @@
-# engine.py
 import asyncio
 import ccxt.async_support as ccxt        # for crypto; swap to alpaca_trade_api for equities
 import numpy as np
@@ -22,7 +21,6 @@ class LiveMaStrategy:
         fast_ma = np.mean(list(self.prices)[-self.fast:])
         slow_ma = np.mean(self.prices)
         signal = 0
-        # generate simple crossover signals
         if fast_ma > slow_ma and self.position == 0:
             self.position = 1
             self.entry_price = price
