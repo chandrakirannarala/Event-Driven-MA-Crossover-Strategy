@@ -11,7 +11,7 @@ A full-stack prototype demonstrating real-time data ingestion, asynchronous stra
 - Logs trade history and computes live performance metrics
 
 
-## 🔧 Requirements
+## Requirements
 - **Python 3.8+**
 - **pip** for installing packages
 
@@ -75,7 +75,7 @@ The dashboard displays:
 
 ---
 
-## 📈 Strategy Details
+## Strategy Details
 - **Moving Averages**: Simple MA over `fast` & `slow` windows
 - **Signals**:
   - **Long entry** when `fast_ma > slow_ma` and no position
@@ -102,7 +102,7 @@ sharpe = rets.mean()/rets.std()*np.sqrt(252)
 
 ---
 
-## 📝 License
+## License
 This project is licensed under the [MIT License](LICENSE).
 
 ---
